@@ -29,6 +29,7 @@ class Classroom {
     public void addStudent(Student student) {
         if (count < students.length) {
             students[count++] = student;
+            System.out.println("Student added");
         } else {
             System.out.println("Classroom is full.");
         }
@@ -51,7 +52,7 @@ class Classroom {
     }
 }
 
-public class AttendanceSystem {
+ class AttendanceSystem {
     public static void main(String[] args) {
         Classroom classroom = new Classroom();
         classroom.addStudent(new Student(101, "Alice Smith", 12));

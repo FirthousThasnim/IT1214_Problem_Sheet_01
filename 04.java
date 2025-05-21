@@ -55,7 +55,7 @@ class BookingSystem {
     }
 }
 
-public class MovieBookingSystem {
+class MovieBookingSystem {
     public static void main(String[] args) {
         BookingSystem system = new BookingSystem();
         system.bookTicket(1, "Alice", 1);

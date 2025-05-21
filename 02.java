@@ -9,9 +9,15 @@ class Vehicle {
         this.hoursParked = hoursParked;
     }
 
-    public String getLicensePlate() { return licensePlate; }
-    public String getOwnerName() { return ownerName; }
-    public int getHoursParked() { return hoursParked; }
+    public String getLicensePlate() { 
+	return licensePlate; 
+	}
+    public String getOwnerName() { 
+	return ownerName;
+	}
+    public int getHoursParked() {
+		return hoursParked;
+		}
 
     public String toString() {
         return "License: " + licensePlate + ", Owner: " + ownerName + ", Hours: " + hoursParked;
@@ -50,7 +56,7 @@ class ParkingLot {
     }
 }
 
-public class ParkingLotTracker {
+class ParkingLotTracker {
     public static void main(String[] args) {
         ParkingLot lot = new ParkingLot();
         lot.parkVehicle(new Vehicle("ABC123", "John Doe", 2));
